@@ -1,0 +1,38 @@
+DEBUG: self.on_download_selected = <bound method HomeScreen._add_to_download_queue of <Screen name='home'>>
+DEBUG: Has on_download_selected callable: True
+DEBUG: Calling on_download_selected with (audio, SANDRO / ASÍ)
+DEBUG: on_download_selected call completed
+[INFO   ] [Base        ] Leaving application in progress...
+ Traceback (most recent call last):
+   File "/home/ron/Python/KJMedia/main.py", line 17, in <module>
+     main()
+   File "/home/ron/Python/KJMedia/main.py", line 13, in main
+     app_main()
+   File "/home/ron/Python/KJMedia/src/kjmedia/main.py", line 7, in main
+     app.run()
+   File "/home/ron/Python/KJMedia/.venv/lib/python3.12/site-packages/kivy/app.py", line 956, in run
+     runTouchApp()
+   File "/home/ron/Python/KJMedia/.venv/lib/python3.12/site-packages/kivy/base.py", line 574, in runTouchApp
+     EventLoop.mainloop()
+   File "/home/ron/Python/KJMedia/.venv/lib/python3.12/site-packages/kivy/base.py", line 339, in mainloop
+     self.idle()
+   File "/home/ron/Python/KJMedia/.venv/lib/python3.12/site-packages/kivy/base.py", line 383, in idle
+     self.dispatch_input()
+   File "/home/ron/Python/KJMedia/.venv/lib/python3.12/site-packages/kivy/base.py", line 334, in dispatch_input
+     post_dispatch_input(*pop(0))
+   File "/home/ron/Python/KJMedia/.venv/lib/python3.12/site-packages/kivy/base.py", line 302, in post_dispatch_input
+     wid.dispatch('on_touch_up', me)
+   File "kivy/_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+   File "/home/ron/Python/KJMedia/.venv/lib/python3.12/site-packages/kivy/uix/behaviors/button.py", line 179, in on_touch_up
+     self.dispatch('on_release')
+   File "kivy/_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+   File "kivy/_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+   File "kivy/_event.pyx", line 1231, in kivy._event.EventObservers._dispatch
+   File "/home/ron/Python/KJMedia/src/kjmedia/ui/screens/edit_filename_screen.py", line 80, in _continue
+     self._on_continue(self.media_type, self.media_item, formatted)
+   File "/home/ron/Python/KJMedia/src/kjmedia/ui/screens/home_screen.py", line 221, in _media_title_edited
+     self._continue_add_to_download_queue(
+   File "/home/ron/Python/KJMedia/src/kjmedia/ui/screens/home_screen.py", line 228, in _continue_add_to_download_queue
+     print(f"DEBUG: Adding {media_item.title} as {media_type}")
+                            ^^^^^^^^^^^^^^^^
+ AttributeError: 'dict' object has no attribute 'title'

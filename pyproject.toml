@@ -1,0 +1,11 @@
+[project]
+name = "kjmedia"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "kivy>=2.3.1",
+    "yt-dlp>=2024.1.0",
+    "youtube-search>=2.2.0",
+]
