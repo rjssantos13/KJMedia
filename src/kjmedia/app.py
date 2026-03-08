@@ -1,5 +1,6 @@
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager
+from kivy.core.window import Window
 from .config.settings import AppSettings
 from .ui.screens.home_screen import HomeScreen
 from .ui.screens.settings_screen import SettingsScreen
@@ -12,6 +13,8 @@ class KJMediaApp(App):
         super().__init__()
         self.settings = AppSettings()
         self.settings.path_manager.ensure_directories()
+        Window.minimum_width = 1200
+        Window.minimum_height = 600
 
     def build(self):
         """Build the main app"""

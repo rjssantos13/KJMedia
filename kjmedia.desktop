@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=KJMedia
+Comment=YouTube Downloader and Player
+Exec=/home/ron/Python/KJMedia/dist/KJMedia
+Icon=/home/ron/Python/KJMedia/assets/icons/icon.png
+Terminal=false
+Categories=AudioVideo;Network;Video;
+StartupNotify=true
